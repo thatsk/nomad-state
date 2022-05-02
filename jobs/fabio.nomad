@@ -18,7 +18,7 @@ job "fabio" {
       driver = "docker"
       config {
         image = "fabiolb/fabio"
-        network_mode = "host"
+        network_mode = "bridge"
         ports = ["lb","ui"]
       }
 
