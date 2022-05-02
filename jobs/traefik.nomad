@@ -2,13 +2,13 @@ job "traefik" {
 
   region      = "global"
   datacenters = [
-  "dc1"
+  "DC1"
 ]
   type        = "system"
   
   constraint {
     attribute = "${meta.type}"
-    value     = "server"
+    value     = "client"
   }
   constraint {
     attribute = "${attr.kernel.name}"
