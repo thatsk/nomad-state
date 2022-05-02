@@ -4,11 +4,14 @@ job "fabio" {
 
   group "fabio" {
     network {
+      mode = "bridge"
       port "lb" {
         static = 9999
+        to = 9999
       }
       port "ui" {
         static = 9998
+        to = 9998
       }
     }
     task "fabio" {
