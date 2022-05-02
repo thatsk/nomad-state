@@ -1,7 +1,7 @@
 job "hello_world" {
   
   datacenters = [
-  "dc1"
+  "DC1"
 ]
   type = "service"
 
@@ -19,7 +19,7 @@ job "hello_world" {
       name = "webapp"
       tags = [
   "traefik.enable=true",
-  "traefik.http.routers.webapp.rule=Host(`hello-world.hashistack.local`)"
+  "traefik.http.routers.webapp.rule=Host(`hello-world.crunk.dk`)"
 ]
       port = "http"
 
