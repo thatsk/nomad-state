@@ -70,6 +70,8 @@ job "traefik" {
   address = "18.159.208.74:8500"
   scheme  = "http"
   endpointWaitTime = "1s"
+[providers.consulCatalog.endpoint.tls]
+  insecureSkipVerify = true
 
 EOF
 
