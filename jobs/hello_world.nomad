@@ -30,6 +30,10 @@ job "hello_world" {
         interval = "10s"
         timeout  = "2s"
       }
+
+      connect {
+        native = true
+      }
     }
 
 
