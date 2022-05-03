@@ -67,7 +67,7 @@ job "traefik" {
   connectAware = true
   refreshInterval = "1s"
 [providers.consulCatalog.endpoint]
-  address = "18.157.167.26:8500"
+  address = "{{ env "attr.unique.network.ip-address" }}:8500"
   scheme  = "http"
   endpointWaitTime = "1s"
 [providers.consulCatalog.endpoint.tls]
