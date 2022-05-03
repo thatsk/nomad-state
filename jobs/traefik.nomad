@@ -64,6 +64,7 @@ job "traefik" {
 [providers.consulCatalog]
   prefix           = "traefik"
   exposedByDefault = false
+  connectAware = true
 [providers.consulCatalog.endpoint]
   address = "18.159.208.74:8500"
   scheme  = "http"
