@@ -65,7 +65,7 @@ job "traefik" {
   prefix           = "traefik"
   exposedByDefault = false
 [providers.consulCatalog.endpoint]
-  address = "{{ env "attr.unique.network.ip-address" }}:8500"
+  address = "18.159.208.74:8500"
   scheme  = "http"
   endpointWaitTime = "1s"
 
