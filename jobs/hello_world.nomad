@@ -6,7 +6,7 @@ job "hello_world" {
   type = "service"
 
   group "app" {
-    count = 0
+    count = 3
 
     network {
       port "http" {
@@ -19,7 +19,7 @@ job "hello_world" {
       name = "webapp"
       tags = [
   "traefik.enable=true",
-  "traefik.http.routers.webapp.rule=Host(`impala-lb-tf-1899406609.eu-central-1.elb.amazonaws.com`)"
+  "traefik.http.routers.webapp.rule=Host(`doe-lb-tf-1665049530.eu-central-1.elb.amazonaws.com`)"
 ]
       port = "http"
 

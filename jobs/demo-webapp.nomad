@@ -2,7 +2,7 @@ job "demo-webapp" {
   datacenters = ["DC1"]
 
   group "demo" {
-    count = 9
+    count = 0
 
     network {
       port  "http"{
