@@ -69,7 +69,7 @@ job "traefik" {
 [providers.consulCatalog.endpoint]
   address = "{{ env "attr.unique.network.ip-address" }}:8500"
   scheme  = "http"
-  endpointWaitTime = "1s"
+  endpointWaitTime = "30s"
 [providers.consulCatalog.endpoint.tls]
   insecureSkipVerify = true
 EOF
