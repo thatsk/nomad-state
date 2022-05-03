@@ -37,7 +37,7 @@ job "traefik" {
       driver = "docker"
 
       config {
-        image = "traefik:2.6"
+        image = "traefik:2.7"
         ports = [
   "https",
   "api",
@@ -65,7 +65,7 @@ job "traefik" {
   prefix           = "traefik"
   exposedByDefault = false
 [providers.consulCatalog.endpoint]
-  address = "127.0.0.1:8500"
+  address = "{{ env "attr.unique.network.ip-address" }}:8500"
   scheme  = "http"
   endpointWaitTime = "1s"
 
