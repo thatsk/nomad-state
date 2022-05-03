@@ -11,7 +11,7 @@ job "podinfo" {
   }
 
   group "app" {
-    count = 3
+    count = 0
 
     network {
       port "http" {
