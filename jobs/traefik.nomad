@@ -2,7 +2,7 @@ job "traefik" {
 
   region      = "global"
   datacenters = [
-  "DC1"
+  "DC1_tmp"
 ]
   type        = "system"
   
