@@ -31,9 +31,9 @@ job "hello_world" {
         timeout  = "2s"
       }
 
-      connect {
-        native = true
-      }
+      // connect {
+      //   native = true
+      // }
     }
 
 
