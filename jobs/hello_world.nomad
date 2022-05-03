@@ -33,9 +33,9 @@ job "hello_world" {
         timeout  = "2s"
       }
 
-      // connect {
-      //   sidecar_service {}
-      // }
+      connect {
+        sidecar_service {}
+      }
     }
 
 
