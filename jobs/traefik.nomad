@@ -72,7 +72,6 @@ job "traefik" {
   endpointWaitTime = "1s"
 [providers.consulCatalog.endpoint.tls]
   insecureSkipVerify = true
-
 EOF
 
         destination = "local/traefik.toml"
