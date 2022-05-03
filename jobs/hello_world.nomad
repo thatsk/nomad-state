@@ -20,7 +20,7 @@ job "hello_world" {
       tags = [
   "traefik.enable=true",
   "traefik.http.routers.webapp.rule=Host(`bedbug-lb-tf-1464285659.eu-central-1.elb.amazonaws.com`)",
-  "traefik.http.middlewares.testheader.headers.customrequestheaders.X-Script-Name=test"
+  "traefik.http.middlewares.testheader.headers.customresponseheaders.X-Script-Name=test"
 ]
       port = "http"
 
