@@ -65,7 +65,7 @@ job "traefik" {
   prefix           = "traefik"
   exposedByDefault = false
 [providers.consulCatalog.endpoint]
-  address = "http://127.0.0.1:8500"
+  address = "127.0.0.1:8500"
   scheme  = "http"
 
 EOF
