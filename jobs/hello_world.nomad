@@ -42,6 +42,7 @@ job "hello_world" {
 
     task "server" {
       driver = "docker"
+      shutdown_delay = "2s"
 
       config {
         image = "mnomitch/hello_world_server"
