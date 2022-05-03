@@ -37,7 +37,7 @@ job "traefik" {
       driver = "docker"
 
       config {
-        image = "traefik:2.7"
+        image = "traefik:2.6"
         ports = [
   "https",
   "api",
