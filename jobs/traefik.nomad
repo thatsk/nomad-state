@@ -49,6 +49,8 @@ job "traefik" {
       }
       template {
         data = <<EOF
+[log]
+  level = "DEBUG"
 [serversTransport]
   insecureSkipVerify = true
 [entryPoints]
@@ -65,13 +67,9 @@ job "traefik" {
   prefix           = "traefik"
   exposedByDefault = false
   connectAware = true
-  refreshInterval = "1s"
 [providers.consulCatalog.endpoint]
-  address = "{{ env "attr.unique.network.ip-address" }}:8500"
+  address = "http://172.17.0.1:8500"
   scheme  = "http"
-  endpointWaitTime = "30s"
-[providers.consulCatalog.endpoint.tls]
-  insecureSkipVerify = true
 EOF
 
         destination = "local/traefik.toml"
