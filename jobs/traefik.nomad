@@ -8,7 +8,7 @@ job "traefik" {
   
   constraint {
     attribute = "${meta.type}"
-    value     = "client"
+    value     = "server"
   }
   constraint {
     attribute = "${attr.kernel.name}"
