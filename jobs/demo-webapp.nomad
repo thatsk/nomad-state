@@ -1,5 +1,5 @@
 job "demo-webapp" {
-  datacenters = ["DC1"]
+  datacenters = ["farm"]
 
   group "demo" {
     count = 0

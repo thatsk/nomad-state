@@ -1,7 +1,7 @@
 job "podinfo" {
   
   datacenters = [
-  "DC1"
+  "farm"
 ]
   type = "service"
 

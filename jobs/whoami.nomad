@@ -1,7 +1,7 @@
 job "whoami" {
   
   datacenters = [
-  "DC1"
+  "farm"
 ]
   type = "service"
 
